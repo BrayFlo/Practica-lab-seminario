@@ -83,3 +83,6 @@ Una pista: deberían salir más de seis tablas. Si les salieron exactamente seis
 4. **Sesión.** ¿Cuál es la llave primaria de `SESION`? ¿Por qué `numero_sesion` solo no alcanza?
 5. **Inscripción.** Relean el último renglón de lo que dijo la dueña. ¿Cuál es la llave primaria de la tabla de inscripción? Si su primera respuesta fue (`num_socio`, `id_clase`), expliquen qué pasa en junio.
 6. **Plan.** "Cada socio contrata *exactamente* un plan." ¿Cómo se refleja la palabra *exactamente* en su esquema?
+
+
+hola 
