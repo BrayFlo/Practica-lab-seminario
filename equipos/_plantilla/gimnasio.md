@@ -11,11 +11,14 @@
 
 ```
 PLAN(**id_plan**, nombre, costo_mensual)
-SOCIO(**num_socio**, nombre, fecha_nacimiento, correo, telefonos)
+SOCIO(**num_socio**, nombre, fecha_nacimiento, correo UNIQUE, telefono, id_plan -> PLAN, num_locker -> LOCKER)
 INSTRUCTOR(**num_empleado**, nombre, especialidad)
-LOCKER()
-CLASE()
-SESION()
+LOCKER(**num_locker**, ubicacion)
+CLASE(**id_clase**, nombre, cupo_max, num_empleado -> INSTRUCTOR)
+SESION(**num_sesion**, fecha, hora_inicio, salon)
+PLAN(**id_plan**, nombre, costo_mensual)
+INSCRIPCION(**num_socio** -> SOCIO **id_plan** -> PLAN ****)
+SUPERVISOR(**num_empleado**, nombre, area_supervision)
 
 ```
 
