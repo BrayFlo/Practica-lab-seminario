@@ -25,3 +25,12 @@ COORDINADOR(id_coordinador, nombre, area_coordinacion)
 ## Diagrama (opcional)
 
 <!-- Si quieren, dibujen aquí el esquema en Mermaid. -->
+PLAN ||--o{ SOCIO : "asignado a"
+    SOCIO ||--o| LOCKER : "tiene asignado"
+    LOCKER ||--o| SOCIO : "pertenece a"
+    CLASE ||--o{ SOCIO : "inscrito en"
+    INSTRUCTOR ||--o{ CLASE : "imparte"
+    SOCIO ||--o{ CLASE : "asiste a"
+    SUPERVISOR ||--o{ INSTRUCTOR : "supervisa"
+    SOCIO ||--o{ INSCRIPCION : "realiza"
+    PLAN ||--o{ INSCRIPCION : "incluye"
